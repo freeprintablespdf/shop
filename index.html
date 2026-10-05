@@ -1,138 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="monetag" content="890a47365fbbdc1424f28acefdd438f7"/>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Free Printables — Free Digital Planners & Downloads</title>
 <meta name="description" content="Download free digital planners, printables and templates. No sign-up, no cost — just click and download.">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
+
+<style>
+  .card-image{
+    aspect-ratio: 4 / 3;
+    width: 100%;
+    background: var(--cream-dark);
+    border-bottom: 1px solid var(--cream-dark);
+    overflow: hidden;
+    position: relative;
+  }
+  .card-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform .5s ease;
+  }
+  .card:hover .card-image img{ transform: scale(1.06); }
+  .card-image .img-tag{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: rgba(59,42,33,.85);
+    color: var(--cream);
+    font-size: .62rem;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    padding: 5px 11px;
+    border-radius: 999px;
+    backdrop-filter: blur(4px);
+  }
+</style>
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
   <nav class="nav">
     <a href="index.html" class="logo">Free Printables</a>
     <ul class="nav-links">
-      <li><a href="index.html#planners">Planners</a></li>
-      <li><a href="index.html#about">About</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="#planners">Planners</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 </header>
 
-<!-- HERO -->
 <div class="hero" id="top">
   <h1>Free Printables</h1>
   <p>Beautiful digital planners and printables — completely free. No sign-up, no payment, no email required. Just click download and start planning today.</p>
   <a href="#planners" class="btn btn-cream">Browse Planners</a>
 </div>
 
-<!-- PLANNERS SECTION -->
 <section id="planners">
   <div class="container">
-
     <h2 class="section-title">Download Your Planners</h2>
     <p class="section-sub">Every file is free — tap a button and it's yours.</p>
 
-    <!-- SEARCH BOX -->
     <div class="search-wrap">
       <input type="text" id="search" placeholder="Search planners…">
     </div>
 
-    <!-- PLANNER GRID -->
     <div class="grid" id="planner-grid">
-
-      <!-- ========================================================
-           HOW TO ADD A NEW PLANNER:
-           1. Copy one <article class="card">...</article> block.
-           2. Paste it below the last card.
-           3. Change the emoji, tag, title, description.
-           4. Change the href="daily-planner.html" to your new
-              product page filename (e.g., "weekly-planner.html").
-           ======================================================== -->
 
       <!-- CARD 1 -->
       <article class="card">
-        <div class="card-cover">📔</div>
+        <div class="card-image">
+          <span class="img-tag">Daily</span>
+          <img src="images/daily-planner.jpg" alt="Daily Planner 2026 preview">
+        </div>
         <div class="card-body">
-          <span class="card-tag">Daily</span>
           <h3>Daily Planner 2026</h3>
           <p>A clean one-page daily planner to organise your tasks, schedule and priorities.</p>
-          <a class="btn btn-brown" href="dailyplanner.html">View</a>
+          <a class="btn btn-brown" href="daily-planner.html">View &amp; Download</a>
         </div>
       </article>
 
       <!-- CARD 2 -->
       <article class="card">
-        <div class="card-cover">🗓️</div>
+        <div class="card-image">
+          <span class="img-tag">Weekly</span>
+          <img src="images/weekly-planner.jpg" alt="Weekly Planner preview">
+        </div>
         <div class="card-body">
-          <span class="card-tag">Weekly</span>
           <h3>Weekly Planner</h3>
           <p>Plan your whole week at a glance with space for goals, notes and appointments.</p>
-          <a class="btn btn-brown" href="weekly-planner.html">View</a>
+          <a class="btn btn-brown" href="weekly-planner.html">View &amp; Download</a>
         </div>
       </article>
 
       <!-- CARD 3 -->
       <article class="card">
-        <div class="card-cover">📚</div>
+        <div class="card-image">
+          <span class="img-tag">Study</span>
+          <img src="images/study-planner.jpg" alt="Student Study Planner preview">
+        </div>
         <div class="card-body">
-          <span class="card-tag">Study</span>
           <h3>Student Study Planner</h3>
           <p>Track assignments, exam dates and revision sessions in one simple layout.</p>
-          <a class="btn btn-brown" href="study-planner.html">View</a>
+          <a class="btn btn-brown" href="study-planner.html">View &amp; Download</a>
         </div>
       </article>
 
       <!-- CARD 4 -->
       <article class="card">
-        <div class="card-cover">💰</div>
+        <div class="card-image">
+          <span class="img-tag">Finance</span>
+          <img src="images/budget-planner.jpg" alt="Budget Planner preview">
+        </div>
         <div class="card-body">
-          <span class="card-tag">Finance</span>
           <h3>Budget Planner</h3>
           <p>Monthly budget tracker with income, expenses and savings sections.</p>
-          <a class="btn btn-brown" href="budget-planner.html">View</a>
+          <a class="btn btn-brown" href="budget-planner.html">View &amp; Download</a>
         </div>
       </article>
 
       <!-- CARD 5 -->
       <article class="card">
-        <div class="card-cover">✅</div>
+        <div class="card-image">
+          <span class="img-tag">Productivity</span>
+          <img src="images/todo-planner.jpg" alt="To-Do List Set preview">
+        </div>
         <div class="card-body">
-          <span class="card-tag">Productivity</span>
           <h3>To-Do List Set</h3>
           <p>Minimal to-do lists in three sizes — perfect for printing or using on a tablet.</p>
-          <a class="btn btn-brown" href="todo-planner.html">View</a>
+          <a class="btn btn-brown" href="todo-planner.html">View &amp; Download</a>
         </div>
       </article>
 
       <!-- CARD 6 -->
       <article class="card">
-        <div class="card-cover">🌸</div>
+        <div class="card-image">
+          <span class="img-tag">Self Care</span>
+          <img src="images/habit-tracker.jpg" alt="Habit Tracker preview">
+        </div>
         <div class="card-body">
-          <span class="card-tag">Self Care</span>
           <h3>Habit Tracker</h3>
           <p>Build better routines with a simple monthly habit tracking sheet.</p>
-          <a class="btn btn-brown" href="habit-tracker.html">View</a>
+          <a class="btn btn-brown" href="habit-tracker.html">View &amp; Download</a>
         </div>
       </article>
-
-      <!-- ADD NEW CARDS ABOVE THIS LINE -->
 
     </div>
 
     <p id="no-results">No planners found. Try another search word.</p>
-
   </div>
 </section>
 
-<!-- ABOUT SECTION -->
 <section class="about" id="about">
   <div class="container">
     <h2 class="section-title">About Us</h2>
@@ -142,43 +169,47 @@
   </div>
 </section>
 
-<!-- CONTACT SECTION -->
+<!-- ============================================================
+     CONTACT — UPDATED EMAIL
+     ============================================================ -->
 <section class="contact" id="contact">
   <div class="container">
     <h2 class="section-title">Get in Touch</h2>
-    <p>Have a question, a request for a planner you'd like to see, We'd love to hear from you.</p>
+    <p>Have a question, a request for a planner you'd like to see, or just want to say hello? We'd love to hear from you.</p>
     <a class="email-link" href="mailto:asifaashu776@gmail.com">asifaashu776@gmail.com</a>
     <br>
     <a class="btn btn-brown" href="mailto:asifaashu776@gmail.com">Send an Email</a>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ============================================================
+     FOOTER — UPDATED EMAIL
+     ============================================================ -->
 <footer>
   <p>&copy; <span id="year"></span> Free Printables. All planners are free to download.</p>
   <p style="margin-top:6px;">Contact: <a href="mailto:asifaashu776@gmail.com">asifaashu776@gmail.com</a></p>
 </footer>
 
 <script>
-document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('year').textContent = new Date().getFullYear();
 
-const searchInput = document.getElementById('search');
-const cards       = document.querySelectorAll('.card');
-const noResults   = document.getElementById('no-results');
+  const searchInput = document.getElementById('search');
+  const cards       = document.querySelectorAll('.card');
+  const noResults   = document.getElementById('no-results');
 
-searchInput.addEventListener('input', function () {
-  const query = searchInput.value.toLowerCase().trim();
-  let visibleCount = 0;
+  searchInput.addEventListener('input', function () {
+    const query = searchInput.value.toLowerCase().trim();
+    let visibleCount = 0;
 
-  cards.forEach(function (card) {
-    const text = card.textContent.toLowerCase();
-    const matches = text.includes(query);
-    card.style.display = matches ? '' : 'none';
-    if (matches) visibleCount++;
+    cards.forEach(function (card) {
+      const text = card.textContent.toLowerCase();
+      const matches = text.includes(query);
+      card.style.display = matches ? '' : 'none';
+      if (matches) visibleCount++;
+    });
+
+    noResults.style.display = (visibleCount === 0) ? 'block' : 'none';
   });
-
-  noResults.style.display = (visibleCount === 0) ? 'block' : 'none';
-});
 </script>
 
 </body>
